@@ -1815,6 +1815,30 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "swap-demo",
+    type: "registry:example",
+    dependencies: ["lucide-react"],
+    registryDependencies: ["swap"],
+    files: [
+      {
+        path: "examples/swap-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "swap-animations-demo",
+    type: "registry:example",
+    dependencies: ["lucide-react"],
+    registryDependencies: ["swap"],
+    files: [
+      {
+        path: "examples/swap-animations-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "stepper-form-demo",
     type: "registry:example",
     dependencies: ["@hookform/resolvers/zod", "react-hook-form", "zod"],

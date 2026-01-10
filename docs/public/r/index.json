@@ -300,44 +300,6 @@
     "type": "registry:ui"
   },
   {
-    "name": "segmented-input",
-    "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
-    ],
-    "registryDependencies": [
-      "input"
-    ],
-    "files": [
-      {
-        "path": "ui/segmented-input.tsx",
-        "type": "registry:ui"
-      }
-    ],
-    "type": "registry:ui"
-  },
-  {
-    "name": "selection-toolbar",
-    "dependencies": [
-      "@floating-ui/react-dom",
-      "@radix-ui/react-slot"
-    ],
-    "registryDependencies": [
-      "button"
-    ],
-    "files": [
-      {
-        "path": "ui/selection-toolbar.tsx",
-        "type": "registry:ui"
-      },
-      {
-        "path": "lib/compose-refs.ts",
-        "type": "registry:lib"
-      }
-    ],
-    "type": "registry:ui"
-  },
-  {
     "name": "kanban",
     "dependencies": [
       "@dnd-kit/core",
@@ -614,6 +576,47 @@
     "type": "registry:ui"
   },
   {
+    "name": "segmented-input",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "@radix-ui/react-direction"
+    ],
+    "registryDependencies": [
+      "input"
+    ],
+    "files": [
+      {
+        "path": "ui/segmented-input.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "type": "registry:ui"
+  },
+  {
+    "name": "selection-toolbar",
+    "dependencies": [
+      "@floating-ui/react-dom",
+      "@radix-ui/react-slot"
+    ],
+    "registryDependencies": [
+      "button",
+      "@diceui/use-as-ref",
+      "@diceui/use-isomorphic-layout-effect",
+      "@diceui/use-lazy-ref"
+    ],
+    "files": [
+      {
+        "path": "ui/selection-toolbar.tsx",
+        "type": "registry:ui"
+      },
+      {
+        "path": "lib/compose-refs.ts",
+        "type": "registry:lib"
+      }
+    ],
+    "type": "registry:ui"
+  },
+  {
     "name": "sortable",
     "dependencies": [
       "@dnd-kit/core",
@@ -717,6 +720,24 @@
       {
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
+      }
+    ],
+    "type": "registry:ui"
+  },
+  {
+    "name": "swap",
+    "dependencies": [
+      "@radix-ui/react-slot"
+    ],
+    "registryDependencies": [
+      "@diceui/use-as-ref",
+      "@diceui/use-isomorphic-layout-effect",
+      "@diceui/use-lazy-ref"
+    ],
+    "files": [
+      {
+        "path": "ui/swap.tsx",
+        "type": "registry:ui"
       }
     ],
     "type": "registry:ui"

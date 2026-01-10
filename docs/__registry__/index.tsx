@@ -277,38 +277,6 @@ export const Index: Record<string, any> = {
       source: "",
       chunks: []
     },
-    "segmented-input": {
-      name: "segmented-input",
-      description: "",
-      type: "registry:ui",
-      registryDependencies: ["input"],
-      files: [{
-        path: "registry/default/ui/segmented-input.tsx",
-        type: "registry:ui",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/ui/segmented-input.tsx")),
-      source: "",
-      chunks: []
-    },
-    "selection-toolbar": {
-      name: "selection-toolbar",
-      description: "",
-      type: "registry:ui",
-      registryDependencies: ["button"],
-      files: [{
-        path: "registry/default/ui/selection-toolbar.tsx",
-        type: "registry:ui",
-        target: ""
-      },{
-        path: "registry/default/lib/compose-refs.ts",
-        type: "registry:lib",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/ui/selection-toolbar.tsx")),
-      source: "",
-      chunks: []
-    },
     "kanban": {
       name: "kanban",
       description: "",
@@ -499,6 +467,38 @@ export const Index: Record<string, any> = {
       source: "",
       chunks: []
     },
+    "segmented-input": {
+      name: "segmented-input",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["input"],
+      files: [{
+        path: "registry/default/ui/segmented-input.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/ui/segmented-input.tsx")),
+      source: "",
+      chunks: []
+    },
+    "selection-toolbar": {
+      name: "selection-toolbar",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["button","@diceui/use-as-ref","@diceui/use-isomorphic-layout-effect","@diceui/use-lazy-ref"],
+      files: [{
+        path: "registry/default/ui/selection-toolbar.tsx",
+        type: "registry:ui",
+        target: ""
+      },{
+        path: "registry/default/lib/compose-refs.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/ui/selection-toolbar.tsx")),
+      source: "",
+      chunks: []
+    },
     "sortable": {
       name: "sortable",
       description: "",
@@ -592,6 +592,20 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/ui/stepper.tsx")),
+      source: "",
+      chunks: []
+    },
+    "swap": {
+      name: "swap",
+      description: "",
+      type: "registry:ui",
+      registryDependencies: ["@diceui/use-as-ref","@diceui/use-isomorphic-layout-effect","@diceui/use-lazy-ref"],
+      files: [{
+        path: "registry/default/ui/swap.tsx",
+        type: "registry:ui",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/ui/swap.tsx")),
       source: "",
       chunks: []
     },
@@ -2912,6 +2926,34 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/examples/stepper-demo.tsx")),
+      source: "",
+      chunks: []
+    },
+    "swap-demo": {
+      name: "swap-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["swap"],
+      files: [{
+        path: "registry/default/examples/swap-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/examples/swap-demo.tsx")),
+      source: "",
+      chunks: []
+    },
+    "swap-animations-demo": {
+      name: "swap-animations-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["swap"],
+      files: [{
+        path: "registry/default/examples/swap-animations-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/examples/swap-animations-demo.tsx")),
       source: "",
       chunks: []
     },

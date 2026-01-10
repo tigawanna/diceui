@@ -272,34 +272,6 @@ export const ui: Registry["items"] = [
     ],
   },
   {
-    name: "segmented-input",
-    type: "registry:ui",
-    dependencies: ["@radix-ui/react-slot", "@radix-ui/react-direction"],
-    registryDependencies: ["input"],
-    files: [
-      {
-        path: "ui/segmented-input.tsx",
-        type: "registry:ui",
-      },
-    ],
-  },
-  {
-    name: "selection-toolbar",
-    type: "registry:ui",
-    dependencies: ["@floating-ui/react-dom", "@radix-ui/react-slot"],
-    registryDependencies: ["button"],
-    files: [
-      {
-        path: "ui/selection-toolbar.tsx",
-        type: "registry:ui",
-      },
-      {
-        path: "lib/compose-refs.ts",
-        type: "registry:lib",
-      },
-    ],
-  },
-  {
     name: "kanban",
     type: "registry:ui",
     dependencies: [
@@ -558,6 +530,39 @@ export const ui: Registry["items"] = [
     ],
   },
   {
+    name: "segmented-input",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-slot", "@radix-ui/react-direction"],
+    registryDependencies: ["input"],
+    files: [
+      {
+        path: "ui/segmented-input.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
+    name: "selection-toolbar",
+    type: "registry:ui",
+    dependencies: ["@floating-ui/react-dom", "@radix-ui/react-slot"],
+    registryDependencies: [
+      "button",
+      "@diceui/use-as-ref",
+      "@diceui/use-isomorphic-layout-effect",
+      "@diceui/use-lazy-ref",
+    ],
+    files: [
+      {
+        path: "ui/selection-toolbar.tsx",
+        type: "registry:ui",
+      },
+      {
+        path: "lib/compose-refs.ts",
+        type: "registry:lib",
+      },
+    ],
+  },
+  {
     name: "sortable",
     type: "registry:ui",
     dependencies: [
@@ -651,6 +656,22 @@ export const ui: Registry["items"] = [
       {
         path: "lib/compose-refs.ts",
         type: "registry:lib",
+      },
+    ],
+  },
+  {
+    name: "swap",
+    type: "registry:ui",
+    dependencies: ["@radix-ui/react-slot"],
+    registryDependencies: [
+      "@diceui/use-as-ref",
+      "@diceui/use-isomorphic-layout-effect",
+      "@diceui/use-lazy-ref",
+    ],
+    files: [
+      {
+        path: "ui/swap.tsx",
+        type: "registry:ui",
       },
     ],
   },
