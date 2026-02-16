@@ -23,8 +23,18 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: "/docs/components/:name((?!radix|base)[^/]+)",
+        destination: "/docs/components/radix/:name",
+        permanent: false,
+      },
+      {
         source: "/r/:component(data-table.*\\.json|data-grid.*\\.json)",
         destination: "https://tablecn.com/r/:component",
+        permanent: true,
+      },
+      {
+        source: "/r/styles",
+        destination: "/r/styles/index.json",
         permanent: true,
       },
       {
@@ -33,9 +43,9 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/r/registry",
-        destination: "/r/registry.json",
-        permanent: true,
+        source: "/r/:name((?!styles).*\\.json)",
+        destination: "/r/styles/radix-default/:name",
+        permanent: false,
       },
       {
         source: "/docs/:path*.mdx",

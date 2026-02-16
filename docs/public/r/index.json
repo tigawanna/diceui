@@ -1,8 +1,9 @@
 [
   {
     "name": "action-bar",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "button",
@@ -18,14 +19,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "angle-slider",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -45,26 +45,26 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "avatar-group",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
         "path": "ui/avatar-group.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "badge-overflow",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
@@ -75,11 +75,11 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "checkbox-group",
+    "type": "registry:ui",
     "dependencies": [
       "@diceui/checkbox-group"
     ],
@@ -88,43 +88,26 @@
         "path": "ui/checkbox-group.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "circular-progress",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
         "path": "ui/circular-progress.tsx",
         "type": "registry:ui"
       }
-    ],
-    "cssVars": {
-      "theme": {
-        "--animate-spin-around": "spin-around 0.8s linear infinite"
-      }
-    },
-    "css": {
-      "@keyframes spin-around": {
-        "0%": {
-          "transform": "rotate(-90deg)"
-        },
-        "100%": {
-          "transform": "rotate(270deg)"
-        }
-      }
-    },
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "color-picker",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slider",
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "button",
@@ -148,26 +131,26 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "color-swatch",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
         "path": "ui/color-swatch.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "compare-slider",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -183,13 +166,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "cropper",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -205,32 +188,31 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "combobox",
+    "type": "registry:ui",
     "dependencies": [
       "@diceui/combobox",
       "@dnd-kit/core",
       "@dnd-kit/modifiers",
       "@dnd-kit/sortable",
       "@dnd-kit/utilities",
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
         "path": "ui/combobox.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "editable",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -250,14 +232,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "file-upload",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -268,24 +249,23 @@
         "path": "ui/file-upload.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "fps",
-    "dependencies": [],
+    "type": "registry:ui",
     "files": [
       {
         "path": "ui/fps.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "gauge",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
@@ -296,17 +276,17 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "kanban",
+    "type": "registry:ui",
     "dependencies": [
       "@dnd-kit/core",
       "@dnd-kit/modifiers",
       "@dnd-kit/sortable",
       "@dnd-kit/utilities",
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
@@ -317,13 +297,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "key-value",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "button",
@@ -346,11 +326,11 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "listbox",
+    "type": "registry:ui",
     "dependencies": [
       "@diceui/listbox"
     ],
@@ -359,14 +339,13 @@
         "path": "ui/listbox.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "marquee",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "files": [
       {
@@ -377,73 +356,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "cssVars": {
-      "theme": {
-        "--animate-marquee-left": "marquee-left var(--marquee-duration) linear var(--marquee-loop-count)",
-        "--animate-marquee-right": "marquee-right var(--marquee-duration) linear var(--marquee-loop-count)",
-        "--animate-marquee-left-rtl": "marquee-left-rtl var(--marquee-duration) linear var(--marquee-loop-count)",
-        "--animate-marquee-right-rtl": "marquee-right-rtl var(--marquee-duration) linear var(--marquee-loop-count)",
-        "--animate-marquee-up": "marquee-up var(--marquee-duration) linear var(--marquee-loop-count)",
-        "--animate-marquee-down": "marquee-down var(--marquee-duration) linear var(--marquee-loop-count)"
-      }
-    },
-    "css": {
-      "@keyframes marquee-left": {
-        "0%": {
-          "transform": "translateX(0%)"
-        },
-        "100%": {
-          "transform": "translateX(calc(-100% - var(--marquee-gap)))"
-        }
-      },
-      "@keyframes marquee-right": {
-        "0%": {
-          "transform": "translateX(calc(-100% - var(--marquee-gap)))"
-        },
-        "100%": {
-          "transform": "translateX(0%)"
-        }
-      },
-      "@keyframes marquee-up": {
-        "0%": {
-          "transform": "translateY(0%)"
-        },
-        "100%": {
-          "transform": "translateY(calc(-100% - var(--marquee-gap)))"
-        }
-      },
-      "@keyframes marquee-down": {
-        "0%": {
-          "transform": "translateY(calc(-100% - var(--marquee-gap)))"
-        },
-        "100%": {
-          "transform": "translateY(0%)"
-        }
-      },
-      "@keyframes marquee-left-rtl": {
-        "0%": {
-          "transform": "translateX(0%)"
-        },
-        "100%": {
-          "transform": "translateX(calc(100% + var(--marquee-gap)))"
-        }
-      },
-      "@keyframes marquee-right-rtl": {
-        "0%": {
-          "transform": "translateX(calc(100% + var(--marquee-gap)))"
-        },
-        "100%": {
-          "transform": "translateX(0%)"
-        }
-      }
-    },
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "mask-input",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
@@ -454,14 +373,14 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "masonry",
+    "type": "registry:ui",
     "dependencies": [
       "@diceui/masonry",
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-isomorphic-layout-effect"
@@ -475,14 +394,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "media-player",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction",
+      "radix-ui",
       "media-chrome"
     ],
     "registryDependencies": [
@@ -503,11 +421,11 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "mention",
+    "type": "registry:ui",
     "dependencies": [
       "@diceui/mention"
     ],
@@ -516,13 +434,13 @@
         "path": "ui/mention.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "phone-input",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "command",
@@ -545,13 +463,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "relative-time-card",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "hover-card"
@@ -561,11 +479,11 @@
         "path": "ui/relative-time-card.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "responsive-dialog",
+    "type": "registry:ui",
     "dependencies": [
       "vaul"
     ],
@@ -582,13 +500,13 @@
         "path": "ui/responsive-dialog.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "scroller",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
@@ -599,14 +517,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "scroll-spy",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -622,14 +539,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "segmented-input",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "input"
@@ -639,14 +555,14 @@
         "path": "ui/segmented-input.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "selection-toolbar",
+    "type": "registry:ui",
     "dependencies": [
       "@floating-ui/react-dom",
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "button",
@@ -663,17 +579,17 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "sortable",
+    "type": "registry:ui",
     "dependencies": [
       "@dnd-kit/core",
       "@dnd-kit/modifiers",
       "@dnd-kit/sortable",
       "@dnd-kit/utilities",
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
@@ -684,13 +600,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "speed-dial",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "button",
@@ -707,25 +623,24 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "stack",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
         "path": "ui/stack.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "stat",
-    "dependencies": [],
+    "type": "registry:ui",
     "registryDependencies": [
       "separator"
     ],
@@ -734,27 +649,26 @@
         "path": "ui/stat.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "status",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "files": [
       {
         "path": "ui/status.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "stepper",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "button",
@@ -771,13 +685,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "swap",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -789,17 +703,14 @@
         "path": "ui/swap.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "qr-code",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
+      "radix-ui",
       "qrcode"
-    ],
-    "devDependencies": [
-      "@types/qrcode"
     ],
     "registryDependencies": [
       "@diceui/use-lazy-ref"
@@ -809,14 +720,13 @@
         "path": "ui/qr-code.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "rating",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -836,11 +746,11 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "tags-input",
+    "type": "registry:ui",
     "dependencies": [
       "@diceui/tags-input"
     ],
@@ -849,14 +759,13 @@
         "path": "ui/tags-input.tsx",
         "type": "registry:ui"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "timeline",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-isomorphic-layout-effect",
@@ -871,13 +780,13 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "time-picker",
+    "type": "registry:ui",
     "dependencies": [
-      "@radix-ui/react-slot"
+      "radix-ui"
     ],
     "registryDependencies": [
       "popover",
@@ -898,23 +807,14 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "css": {
-      "@utility scrollbar-none": {
-        "scrollbar-width": "none",
-        "&::-webkit-scrollbar": {
-          "display": "none"
-        }
-      }
-    },
-    "type": "registry:ui"
+    ]
   },
   {
     "name": "tour",
+    "type": "registry:ui",
     "dependencies": [
       "@floating-ui/react-dom",
-      "@radix-ui/react-slot",
-      "@radix-ui/react-direction"
+      "radix-ui"
     ],
     "registryDependencies": [
       "@diceui/use-as-ref",
@@ -930,7 +830,6 @@
         "path": "lib/compose-refs.ts",
         "type": "registry:lib"
       }
-    ],
-    "type": "registry:ui"
+    ]
   }
 ]

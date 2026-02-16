@@ -9,7 +9,12 @@ import { notFound } from "next/navigation";
 import { CopyMarkdownButton, ViewOptions } from "@/components/doc-actions";
 import { DynamicLink } from "@/components/dynamic-link";
 import { Mdx } from "@/components/mdx-components";
+import {
+  ButtonGroup,
+  ButtonGroupSeparator,
+} from "@/components/ui/button-group";
 import { Separator } from "@/components/ui/separator";
+import { getChangelogToc } from "@/lib/changelog";
 import { source } from "@/lib/source";
 
 interface DocPageParams {
@@ -47,9 +52,12 @@ export default async function DocPage(props: DocPageParams) {
   const docLink = page.data.links?.doc;
   const apiLink = page.data.links?.api;
 
+  const toc =
+    page.url === "/docs/changelog" ? getChangelogToc() : page.data.toc;
+
   return (
     <DocsPage
-      toc={page.data.toc}
+      toc={toc}
       tableOfContent={{ style: "clerk" }}
       full={page.data.full}
     >
@@ -67,13 +75,17 @@ export default async function DocPage(props: DocPageParams) {
               className="data-[orientation=vertical]:h-6"
             />
           )}
-          <CopyMarkdownButton markdownUrl={`${page.url}.mdx`} />
-          <ViewOptions
-            markdownUrl={`${page.url}.mdx`}
-            githubUrl={`https://github.com/sadmann7/diceui/blob/main/docs/content/docs/${page.path}`}
-          />
+          <ButtonGroup>
+            <CopyMarkdownButton markdownUrl={`${page.url}.mdx`} />
+            <ButtonGroupSeparator />
+            <ViewOptions
+              markdownUrl={`${page.url}.mdx`}
+              githubUrl={`https://github.com/sadmann7/diceui/blob/main/docs/content/docs/${page.path}`}
+            />
+          </ButtonGroup>
         </div>
       </div>
+      <Separator className="mt-2 mb-0.5" />
       <DocsBody>
         <Mdx page={page} />
       </DocsBody>
