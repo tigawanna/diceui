@@ -11,43 +11,52 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/compare-slider
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot lucide-react
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-    <ComponentSource name="use-as-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+```package-install
+@radix-ui/react-slot lucide-react
+```
 
-    <ComponentSource name="compare-slider" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
+
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+<ComponentSource name="use-as-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="compare-slider" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -97,7 +106,7 @@ Compare slider with custom handle, labels, and vertical orientation.
 The root container for the compare slider component.
 
 <AutoTypeTable
-  path="./types/docs/compare-slider.ts"
+  path="./types/radix/compare-slider.ts"
   name="CompareSliderProps"
 />
 
@@ -115,7 +124,7 @@ The root container for the compare slider component.
 The container for the "before" content that appears on the left (or top in vertical mode).
 
 <AutoTypeTable
-  path="./types/docs/compare-slider.ts"
+  path="./types/radix/compare-slider.ts"
   name="CompareSliderBeforeProps"
 />
 
@@ -133,7 +142,7 @@ The container for the "before" content that appears on the left (or top in verti
 The container for the "after" content that appears on the right (or bottom in vertical mode).
 
 <AutoTypeTable
-  path="./types/docs/compare-slider.ts"
+  path="./types/radix/compare-slider.ts"
   name="CompareSliderAfterProps"
 />
 
@@ -151,7 +160,7 @@ The container for the "after" content that appears on the right (or bottom in ve
 The draggable handle that controls the comparison position.
 
 <AutoTypeTable
-  path="./types/docs/compare-slider.ts"
+  path="./types/radix/compare-slider.ts"
   name="CompareSliderHandleProps"
 />
 
@@ -169,7 +178,7 @@ The draggable handle that controls the comparison position.
 Custom labels that can be positioned on either side of the comparison.
 
 <AutoTypeTable
-  path="./types/docs/compare-slider.ts"
+  path="./types/radix/compare-slider.ts"
   name="CompareSliderLabelProps"
 />
 

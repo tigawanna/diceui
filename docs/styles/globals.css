@@ -343,7 +343,7 @@
 
 @layer components {
   [data-rehype-pretty-code-figure] figure {
-    @apply border-none bg-secondary/50!;
+    @apply bg-secondary/50!;
   }
 
   [data-line] span {

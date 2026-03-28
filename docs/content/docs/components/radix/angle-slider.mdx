@@ -11,47 +11,55 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/angle-slider
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="visually-hidden-input" />
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+```package-install
+@radix-ui/react-slot
+```
 
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
 
-    <ComponentSource name="angle-slider" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.</Step>
+
+<ComponentSource name="visually-hidden-input" />
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="angle-slider" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -110,7 +118,7 @@ You can customize the appearance by targeting specific components:
 ### Track Theming
 Use `[&>[data-slot='angle-slider-track-rail']]` to style the background track:
 ```tsx
-<AngleSliderTrack className="[&>[data-slot='angle-slider-track-rail']]:stroke-green-100" />
+<AngleSliderTrack className="*:data-[slot='angle-slider-track-rail']:stroke-green-100" />
 ```
 
 ### Range Theming
@@ -135,7 +143,7 @@ Use `[&>[data-slot='angle-slider-track-rail']]` to style the background track:
 The main container component for the angle slider.
 
 <AutoTypeTable
-  path="./types/docs/angle-slider.ts"
+  path="./types/radix/angle-slider.ts"
   name="AngleSliderProps"
 />
 
@@ -153,7 +161,7 @@ The main container component for the angle slider.
 The circular track that represents the full range of possible values.
 
 <AutoTypeTable
-  path="./types/docs/angle-slider.ts"
+  path="./types/radix/angle-slider.ts"
   name="AngleSliderTrackProps"
 />
 
@@ -175,7 +183,7 @@ The circular track that represents the full range of possible values.
 The portion of the track that represents the selected range.
 
 <AutoTypeTable
-  path="./types/docs/angle-slider.ts"
+  path="./types/radix/angle-slider.ts"
   name="AngleSliderRangeProps"
 />
 
@@ -193,7 +201,7 @@ The portion of the track that represents the selected range.
 The draggable handle for selecting values.
 
 <AutoTypeTable
-  path="./types/docs/angle-slider.ts"
+  path="./types/radix/angle-slider.ts"
   name="AngleSliderThumbProps"
 />
 
@@ -211,7 +219,7 @@ The draggable handle for selecting values.
 Displays the current value(s) with customizable formatting.
 
 <AutoTypeTable
-  path="./types/docs/angle-slider.ts"
+  path="./types/radix/angle-slider.ts"
   name="AngleSliderValueProps"
 />
 

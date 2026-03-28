@@ -10,7 +10,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/registry/bases/radix/ui/dropdown-menu";
 import {
   Stat,
   StatIndicator,
@@ -61,7 +61,7 @@ export default function StatDemo() {
       <Stat>
         <StatLabel>Conversion Rate</StatLabel>
         <DropdownMenu>
-          <DropdownMenuTrigger asChild>
+          <DropdownMenuTrigger>
             <StatIndicator variant="action">
               <MoreHorizontal />
             </StatIndicator>

@@ -11,45 +11,54 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/responsive-dialog
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     vaul
-     ```
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+<Steps className="pt-2">
 
-    <ComponentSource name="use-as-ref" />
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-    <ComponentSource name="use-mobile" />
-  </Step>
-  <Step>
-    Copy and paste the dialog and drawer components into your project.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="dialog" />
-    <ComponentSource name="drawer" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+```package-install
+vaul
+```
 
-    <ComponentSource name="responsive-dialog" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-as-ref" />
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+<ComponentSource name="use-mobile" />
+
+<Step>Copy and paste the dialog and drawer components into your project.</Step>
+
+<ComponentSource name="dialog" />
+<ComponentSource name="drawer" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="responsive-dialog" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -107,7 +116,7 @@ Each component exposes a `data-variant` attribute that can be used to apply diff
 The root component that manages the dialog/drawer state.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogProps"
 />
 
@@ -116,7 +125,7 @@ The root component that manages the dialog/drawer state.
 The button that opens the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogTriggerProps"
 />
 
@@ -134,7 +143,7 @@ The button that opens the dialog/drawer.
 The content container for the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogContentProps"
 />
 
@@ -152,7 +161,7 @@ The content container for the dialog/drawer.
 The header section of the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogHeaderProps"
 />
 
@@ -170,7 +179,7 @@ The header section of the dialog/drawer.
 The footer section of the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogFooterProps"
 />
 
@@ -188,7 +197,7 @@ The footer section of the dialog/drawer.
 The title of the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogTitleProps"
 />
 
@@ -206,7 +215,7 @@ The title of the dialog/drawer.
 The description of the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogDescriptionProps"
 />
 
@@ -224,7 +233,7 @@ The description of the dialog/drawer.
 The close button for the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogCloseProps"
 />
 
@@ -242,7 +251,7 @@ The close button for the dialog/drawer.
 The overlay behind the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogOverlayProps"
 />
 
@@ -260,7 +269,7 @@ The overlay behind the dialog/drawer.
 The portal container for the dialog/drawer.
 
 <AutoTypeTable
-  path="./types/docs/responsive-dialog.ts"
+  path="./types/radix/responsive-dialog.ts"
   name="ResponsiveDialogPortalProps"
 />
 

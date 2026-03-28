@@ -11,47 +11,55 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/editable
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="visually-hidden-input" />
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+```package-install
+@radix-ui/react-slot
+```
 
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
 
-    <ComponentSource name="editable" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.</Step>
+
+<ComponentSource name="visually-hidden-input" />
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="editable" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -118,7 +126,7 @@ Control the editable component in a form.
 The main container component for editable functionality.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditableProps"
 />
 
@@ -127,7 +135,7 @@ The main container component for editable functionality.
 The label component for the editable field.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditableLabelProps"
 />
 
@@ -153,7 +161,7 @@ The label component for the editable field.
 Container for the preview and input components.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditableAreaProps"
 />
 
@@ -175,7 +183,7 @@ Container for the preview and input components.
 The preview component that displays the current value.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditablePreviewProps"
 />
 
@@ -201,7 +209,7 @@ The preview component that displays the current value.
 The input component for editing the value.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditableInputProps"
 />
 
@@ -210,7 +218,7 @@ The input component for editing the value.
 Button to trigger edit mode.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditableTriggerProps"
 />
 
@@ -232,7 +240,7 @@ Button to trigger edit mode.
 Container for action buttons.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditableToolbarProps"
 />
 
@@ -241,7 +249,7 @@ Container for action buttons.
 Button to submit changes.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditableSubmitProps"
 />
 
@@ -250,7 +258,7 @@ Button to submit changes.
 Button to cancel changes.
 
 <AutoTypeTable
-  path="./types/docs/editable.ts"
+  path="./types/radix/editable.ts"
   name="EditableCancelProps"
 />
 

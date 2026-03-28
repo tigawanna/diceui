@@ -11,38 +11,48 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/swap
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+<Steps className="pt-2">
 
-    <ComponentSource name="use-as-ref" />
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="swap" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+```package-install
+@radix-ui/react-slot
+```
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-as-ref" />
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="swap" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -74,7 +84,7 @@ The swap component supports 4 different animation types: fade, rotate, flip, and
 The main container component for swap functionality.
 
 <AutoTypeTable
-  path="./types/docs/swap.ts"
+  path="./types/radix/swap.ts"
   name="SwapProps"
 />
 
@@ -100,7 +110,7 @@ The main container component for swap functionality.
 The content shown when the swap is in the swapped state.
 
 <AutoTypeTable
-  path="./types/docs/swap.ts"
+  path="./types/radix/swap.ts"
   name="SwapOnProps"
 />
 
@@ -118,7 +128,7 @@ The content shown when the swap is in the swapped state.
 The content shown when the swap is in the default state.
 
 <AutoTypeTable
-  path="./types/docs/swap.ts"
+  path="./types/radix/swap.ts"
   name="SwapOffProps"
 />
 

@@ -11,48 +11,56 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/key-value
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot lucide-react
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="visually-hidden-input" />
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+```package-install
+@radix-ui/react-slot lucide-react
+```
 
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-    <ComponentSource name="use-as-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
 
-    <ComponentSource name="key-value" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.</Step>
+
+<ComponentSource name="visually-hidden-input" />
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+<ComponentSource name="use-as-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="key-value" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -113,7 +121,7 @@ Integrate with React Hook Form for form validation.
 The main container component that manages the key-value items state.
 
 <AutoTypeTable
-  path="types/docs/key-value.ts"
+  path="types/radix/key-value.ts"
   name="KeyValueProps"
 />
 
@@ -139,7 +147,7 @@ The main container component that manages the key-value items state.
 Container for rendering the list of key-value items.
 
 <AutoTypeTable
-  path="types/docs/key-value.ts"
+  path="types/radix/key-value.ts"
   name="KeyValueListProps"
 />
 
@@ -157,7 +165,7 @@ Container for rendering the list of key-value items.
 Individual key-value pair item container.
 
 <AutoTypeTable
-  path="types/docs/key-value.ts"
+  path="types/radix/key-value.ts"
   name="KeyValueItemProps"
 />
 
@@ -175,7 +183,7 @@ Individual key-value pair item container.
 Input field for the key part of the item.
 
 <AutoTypeTable
-  path="types/docs/key-value.ts"
+  path="types/radix/key-value.ts"
   name="KeyValueKeyInputProps"
 />
 
@@ -184,7 +192,7 @@ Input field for the key part of the item.
 Input field for the value part of the item.
 
 <AutoTypeTable
-  path="types/docs/key-value.ts"
+  path="types/radix/key-value.ts"
   name="KeyValueValueInputProps"
 />
 
@@ -193,7 +201,7 @@ Input field for the value part of the item.
 Button to remove a key-value item.
 
 <AutoTypeTable
-  path="types/docs/key-value.ts"
+  path="types/radix/key-value.ts"
   name="KeyValueRemoveProps"
 />
 
@@ -202,7 +210,7 @@ Button to remove a key-value item.
 Button to add a new key-value item.
 
 <AutoTypeTable
-  path="types/docs/key-value.ts"
+  path="types/radix/key-value.ts"
   name="KeyValueAddProps"
 />
 
@@ -211,7 +219,7 @@ Button to add a new key-value item.
 Error message display for validation errors.
 
 <AutoTypeTable
-  path="types/docs/key-value.ts"
+  path="types/radix/key-value.ts"
   name="KeyValueErrorProps"
 />
 

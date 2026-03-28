@@ -11,21 +11,34 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/segmented-input
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-    Copy and paste the following code into your project.
+<TabsContent value="manual">
 
-    <ComponentSource name="segmented-input" />
-  </Step>
+<Steps className="pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="segmented-input" />
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -68,7 +81,7 @@ Display segmented inputs in a vertical orientation.
 The main segmented input container.
 
 <AutoTypeTable
-  path="./types/docs/segmented-input.ts"
+  path="./types/radix/segmented-input.ts"
   name="SegmentedInputProps"
 />
 
@@ -77,7 +90,7 @@ The main segmented input container.
 Individual input items within the segmented input.
 
 <AutoTypeTable
-  path="./types/docs/segmented-input.ts"
+  path="./types/radix/segmented-input.ts"
   name="SegmentedInputItemProps"
 />
 

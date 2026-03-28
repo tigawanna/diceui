@@ -17,28 +17,40 @@ links:
 
 ## Installation with shadcn/ui
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/listbox
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @diceui/listbox
-     ```
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Steps className="pt-2">
 
-    <ComponentSource name="listbox" />
-  </Step>
+<Step>Install the following dependencies:</Step>
+
+```package-install
+@diceui/listbox
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="listbox" />
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -97,7 +109,7 @@ Group items together to create a list of related options.
 The root component for creating listboxes.
 
 <AutoTypeTable
-  path="./types/docs/listbox.ts"
+  path="./types/radix/listbox.ts"
   name="RootProps"
 />
 
@@ -106,7 +118,7 @@ The root component for creating listboxes.
 A group of items inside the selectable list.
 
 <AutoTypeTable
-  path="./types/docs/listbox.ts"
+  path="./types/radix/listbox.ts"
   name="GroupProps"
 />
 
@@ -115,7 +127,7 @@ A group of items inside the selectable list.
 A label for the group of items.
 
 <AutoTypeTable
-  path="./types/docs/listbox.ts"
+  path="./types/radix/listbox.ts"
   name="GroupLabelProps"
 />
 
@@ -124,7 +136,7 @@ A label for the group of items.
 An item inside the selectable list.
 
 <AutoTypeTable
-  path="./types/docs/listbox.ts"
+  path="./types/radix/listbox.ts"
   name="ItemProps"
 />
 
@@ -133,7 +145,7 @@ An item inside the selectable list.
 A visual indicator that shows when the item is selected.
 
 <AutoTypeTable
-  path="./types/docs/listbox.ts"
+  path="./types/radix/listbox.ts"
   name="ItemIndicatorProps"
 />
 

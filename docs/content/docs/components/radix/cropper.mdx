@@ -11,43 +11,52 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/cropper
 
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+```package-install
+@radix-ui/react-slot
+```
 
-    <ComponentSource name="cropper" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
+
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="cropper" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -102,7 +111,7 @@ A cropper that works with video content.
 The root container for the cropper component.
 
 <AutoTypeTable
-  path="./types/docs/cropper.ts"
+  path="./types/radix/cropper.ts"
   name="CropperProps"
 />
 
@@ -111,7 +120,7 @@ The root container for the cropper component.
 The image element to be cropped.
 
 <AutoTypeTable
-  path="./types/docs/cropper.ts"
+  path="./types/radix/cropper.ts"
   name="CropperImageProps"
 />
 
@@ -120,7 +129,7 @@ The image element to be cropped.
 The video element to be cropped.
 
 <AutoTypeTable
-  path="./types/docs/cropper.ts"
+  path="./types/radix/cropper.ts"
   name="CropperVideoProps"
 />
 
@@ -129,7 +138,7 @@ The video element to be cropped.
 The crop area overlay that shows the selected region.
 
 <AutoTypeTable
-  path="./types/docs/cropper.ts"
+  path="./types/radix/cropper.ts"
   name="CropperAreaProps"
 />
 

@@ -2,9 +2,9 @@
 
 import { Edit, Trash2 } from "lucide-react";
 import * as React from "react";
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import { cn } from "@/lib/utils";
+import { Button } from "@/registry/bases/radix/ui/button";
+import { Checkbox } from "@/registry/bases/radix/ui/checkbox";
 import {
   Editable,
   EditableArea,
@@ -27,23 +27,23 @@ export default function EditableTodoListDemo() {
     { id: "4", text: "540 flip", completed: false },
   ]);
 
-  function onDeleteTodo(id: string) {
+  const onDeleteTodo = React.useCallback((id: string) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
-  }
+  }, []);
 
-  function onToggleTodo(id: string) {
+  const onToggleTodo = React.useCallback((id: string) => {
     setTodos((prev) =>
       prev.map((todo) =>
         todo.id === id ? { ...todo, completed: !todo.completed } : todo,
       ),
     );
-  }
+  }, []);
 
-  function onUpdateTodo(id: string, newText: string) {
+  const onUpdateTodo = React.useCallback((id: string, newText: string) => {
     setTodos((prev) =>
       prev.map((todo) => (todo.id === id ? { ...todo, text: newText } : todo)),
     );
-  }
+  }, []);
 
   return (
     <div className="flex w-full min-w-0 flex-col gap-2">

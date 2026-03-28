@@ -11,21 +11,34 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/stat
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-    Copy and paste the following code into your project.
+<TabsContent value="manual">
 
-    <ComponentSource name="stat" />
-  </Step>
+<Steps className="pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="stat" />
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -82,7 +95,7 @@ Combine different stat components to create rich statistical displays.
 The main container component that provides a card-style layout for displaying statistics.
 
 <AutoTypeTable
-  path="./types/docs/stat.ts"
+  path="./types/radix/stat.ts"
   name="StatProps"
 />
 
@@ -91,7 +104,7 @@ The main container component that provides a card-style layout for displaying st
 A label component for the statistic title or category.
 
 <AutoTypeTable
-  path="./types/docs/stat.ts"
+  path="./types/radix/stat.ts"
   name="StatLabelProps"
 />
 
@@ -100,7 +113,7 @@ A label component for the statistic title or category.
 A visual indicator component that can display icons, badges, or action buttons with various color themes.
 
 <AutoTypeTable
-  path="./types/docs/stat.ts"
+  path="./types/radix/stat.ts"
   name="StatIndicatorProps"
 />
 
@@ -122,7 +135,7 @@ A visual indicator component that can display icons, badges, or action buttons w
 Displays the primary statistic value with emphasized typography.
 
 <AutoTypeTable
-  path="./types/docs/stat.ts"
+  path="./types/radix/stat.ts"
   name="StatValueProps"
 />
 
@@ -131,7 +144,7 @@ Displays the primary statistic value with emphasized typography.
 Displays trend information with directional styling (up, down, or neutral).
 
 <AutoTypeTable
-  path="./types/docs/stat.ts"
+  path="./types/radix/stat.ts"
   name="StatTrendProps"
 />
 
@@ -149,7 +162,7 @@ Displays trend information with directional styling (up, down, or neutral).
 A horizontal separator for dividing content within the stat card.
 
 <AutoTypeTable
-  path="./types/docs/stat.ts"
+  path="./types/radix/stat.ts"
   name="StatSeparatorProps"
 />
 

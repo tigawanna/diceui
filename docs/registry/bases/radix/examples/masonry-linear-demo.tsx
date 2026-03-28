@@ -1,6 +1,5 @@
-import * as React from "react";
-import { Skeleton } from "@/components/ui/skeleton";
 import { Masonry, MasonryItem } from "@/registry/bases/radix/ui/masonry";
+import { Skeleton } from "@/registry/bases/radix/ui/skeleton";
 
 const items = [
   {

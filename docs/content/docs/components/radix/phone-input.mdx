@@ -11,48 +11,56 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/phone-input
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot lucide-react
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="visually-hidden-input" />
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+```package-install
+@radix-ui/react-slot lucide-react
+```
 
-    <ComponentSource name="use-as-ref" />
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
 
-    <ComponentSource name="phone-input" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.</Step>
+
+<ComponentSource name="visually-hidden-input" />
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-as-ref" />
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="phone-input" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -94,7 +102,7 @@ Use the phone input component in a form with validation.
 The root container component that acts as both the wrapper and input group. Handles layout, borders, and focus states.
 
 <AutoTypeTable
-  path="./types/docs/phone-input.ts"
+  path="./types/radix/phone-input.ts"
   name="PhoneInputProps"
 />
 
@@ -120,7 +128,7 @@ The root container component that acts as both the wrapper and input group. Hand
 The button component that triggers the country dropdown. Uses Popover and Command internally for the country list.
 
 <AutoTypeTable
-  path="./types/docs/phone-input.ts"
+  path="./types/radix/phone-input.ts"
   name="PhoneInputCountrySelectProps"
 />
 
@@ -129,7 +137,7 @@ The button component that triggers the country dropdown. Uses Popover and Comman
 The input field component for entering the phone number.
 
 <AutoTypeTable
-  path="./types/docs/phone-input.ts"
+  path="./types/radix/phone-input.ts"
   name="PhoneInputFieldProps"
 />
 

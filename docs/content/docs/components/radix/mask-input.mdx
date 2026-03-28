@@ -11,33 +11,44 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/mask-input
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="mask-input" />
-  </Step>
+```package-install
+@radix-ui/react-slot
+```
+
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
+
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="mask-input" />
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -191,7 +202,7 @@ Use the `maskPlaceholder` prop to control when mask format hints are shown. The 
 The main masked input component that handles formatting and user input.
 
 <AutoTypeTable
-  path="./types/docs/mask-input.ts"
+  path="./types/radix/mask-input.ts"
   name="MaskInputProps"
 />
 
@@ -200,7 +211,7 @@ The main masked input component that handles formatting and user input.
 Interface for creating custom mask patterns.
 
 <AutoTypeTable
-  path="./types/docs/mask-input.ts"
+  path="./types/radix/mask-input.ts"
   name="MaskPattern"
 />
 
@@ -231,7 +242,7 @@ Predefined mask pattern keys for common input formats.
 Options passed to the transform function for advanced formatting.
 
 <AutoTypeTable
-  path="./types/docs/mask-input.ts"
+  path="./types/radix/mask-input.ts"
   name="TransformOptions"
 />
 
@@ -240,7 +251,7 @@ Options passed to the transform function for advanced formatting.
 Options passed to the validate function for enhanced validation.
 
 <AutoTypeTable
-  path="./types/docs/mask-input.ts"
+  path="./types/radix/mask-input.ts"
   name="ValidateOptions"
 />
 

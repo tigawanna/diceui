@@ -11,29 +11,41 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/avatar-group
 
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Steps className="pt-2">
 
-    <ComponentSource name="avatar-group" />
-  </Step>
+<Step>Install the following dependencies:</Step>
+
+```package-install
+@radix-ui/react-slot
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="avatar-group" />
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -86,7 +98,7 @@ Customize the overflow indicator with the `renderOverflow` prop.
 The main avatar group container that handles layout and masking of child elements.
 
 <AutoTypeTable
-  path="./types/docs/avatar-group.ts"
+  path="./types/radix/avatar-group.ts"
   name="AvatarGroupProps"
 />
 

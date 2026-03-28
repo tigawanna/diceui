@@ -1,7 +1,11 @@
 "use client";
 
 import * as React from "react";
-
+import { cn } from "@/lib/utils";
+import { useAsRef } from "@/registry/bases/radix/hooks/use-as-ref";
+import { useIsomorphicLayoutEffect } from "@/registry/bases/radix/hooks/use-isomorphic-layout-effect";
+import { useLazyRef } from "@/registry/bases/radix/hooks/use-lazy-ref";
+import { useIsMobile } from "@/registry/bases/radix/hooks/use-mobile";
 import {
   Dialog,
   DialogClose,
@@ -13,7 +17,7 @@ import {
   DialogPortal,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "@/registry/bases/radix/ui/dialog";
 import {
   Drawer,
   DrawerClose,
@@ -25,12 +29,7 @@ import {
   DrawerPortal,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer";
-import { cn } from "@/lib/utils";
-import { useAsRef } from "@/registry/bases/radix/hooks/use-as-ref";
-import { useIsomorphicLayoutEffect } from "@/registry/bases/radix/hooks/use-isomorphic-layout-effect";
-import { useLazyRef } from "@/registry/bases/radix/hooks/use-lazy-ref";
-import { useIsMobile } from "@/registry/bases/radix/hooks/use-mobile";
+} from "@/registry/bases/radix/ui/drawer";
 
 const ROOT_NAME = "ResponsiveDialog";
 
@@ -115,6 +114,10 @@ function ResponsiveDialog({
     };
   }, [listenersRef, stateRef, onOpenChangeRef]);
 
+  if (stateRef.current.isMobile !== isMobile) {
+    stateRef.current.isMobile = isMobile;
+  }
+
   const open = useStore((state) => state.open, store);
 
   useIsomorphicLayoutEffect(() => {
@@ -122,10 +125,6 @@ function ResponsiveDialog({
       store.setState("open", openProp);
     }
   }, [openProp]);
-
-  useIsomorphicLayoutEffect(() => {
-    store.setState("isMobile", isMobile);
-  }, [isMobile]);
 
   const onOpenChange = React.useCallback(
     (value: boolean) => {
@@ -231,6 +230,7 @@ function ResponsiveDialogHeader({
 }
 
 function ResponsiveDialogFooter({
+  showCloseButton,
   ...props
 }: React.ComponentProps<typeof DialogFooter>) {
   const isMobile = useStore((state) => state.isMobile);
@@ -239,7 +239,13 @@ function ResponsiveDialogFooter({
     return <DrawerFooter data-variant="drawer" {...props} />;
   }
 
-  return <DialogFooter data-variant="dialog" {...props} />;
+  return (
+    <DialogFooter
+      data-variant="dialog"
+      showCloseButton={showCloseButton}
+      {...props}
+    />
+  );
 }
 
 function ResponsiveDialogTitle({

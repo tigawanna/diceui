@@ -11,46 +11,57 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/circular-progress
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Steps className="pt-2">
 
-    <ComponentSource name="circular-progress" />
-  </Step>
-  <Step>
-    Add the following CSS animations to your `globals.css` file:
+<Step>Install the following dependencies:</Step>
 
-    ```css
-    @theme {
-      --animate-spin-around: spin-around 0.8s linear infinite;
+```package-install
+@radix-ui/react-slot
+```
 
-      @keyframes spin-around {
-        0% {
-          transform: rotate(-90deg);
-        }
-        100% {
-          transform: rotate(270deg);
-        }
-      }
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="circular-progress" />
+
+<Step>Add the following CSS animations to your `globals.css` file:</Step>
+
+```css
+@theme {
+  --animate-spin-around: spin-around 0.8s linear infinite;
+
+  @keyframes spin-around {
+    0% {
+      transform: rotate(-90deg);
     }
-    ```
-  </Step>
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+}
+```
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -131,7 +142,7 @@ You can also use Tailwind's stroke utilities directly:
 The main container component for the circular progress.
 
 <AutoTypeTable
-  path="./types/docs/circular-progress.ts"
+  path="./types/radix/circular-progress.ts"
   name="CircularProgressProps"
 />
 
@@ -165,7 +176,7 @@ The main container component for the circular progress.
 The SVG container that holds the circular progress tracks and ranges.
 
 <AutoTypeTable
-  path="./types/docs/circular-progress.ts"
+  path="./types/radix/circular-progress.ts"
   name="CircularProgressIndicatorProps"
 />
 
@@ -199,7 +210,7 @@ The SVG container that holds the circular progress tracks and ranges.
 The background circle that represents the full range of possible values.
 
 <AutoTypeTable
-  path="./types/docs/circular-progress.ts"
+  path="./types/radix/circular-progress.ts"
   name="CircularProgressTrackProps"
 />
 
@@ -217,7 +228,7 @@ The background circle that represents the full range of possible values.
 The portion of the circle that represents the current progress value.
 
 <AutoTypeTable
-  path="./types/docs/circular-progress.ts"
+  path="./types/radix/circular-progress.ts"
   name="CircularProgressRangeProps"
 />
 
@@ -247,7 +258,7 @@ The portion of the circle that represents the current progress value.
 The text element that displays the current progress value or custom content.
 
 <AutoTypeTable
-  path="./types/docs/circular-progress.ts"
+  path="./types/radix/circular-progress.ts"
   name="CircularProgressValueTextProps"
 />
 
@@ -266,7 +277,7 @@ The text element that displays the current progress value or custom content.
 The combined component that includes all the parts.
 
 <AutoTypeTable
-  path="./types/docs/circular-progress.ts"
+  path="./types/radix/circular-progress.ts"
   name="CircularProgressProps"
 />
 

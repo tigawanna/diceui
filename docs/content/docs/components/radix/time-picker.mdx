@@ -11,48 +11,56 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/time-picker
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="visually-hidden-input" />
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+```package-install
+@radix-ui/react-slot
+```
 
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-    <ComponentSource name="use-as-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
 
-    <ComponentSource name="time-picker" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the visually hidden input component into your `components/visually-hidden-input.tsx` file.</Step>
+
+<ComponentSource name="visually-hidden-input" />
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+<ComponentSource name="use-as-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="time-picker" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -142,7 +150,7 @@ Use the time picker in a form with validation.
 The main container component for time picker functionality.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerProps"
 />
 
@@ -168,7 +176,7 @@ The main container component for time picker functionality.
 The label component for the time picker field.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerLabelProps"
 />
 
@@ -177,7 +185,7 @@ The label component for the time picker field.
 The container for input segments that sets up CSS variables for dynamic segment widths.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerInputGroupProps"
 />
 
@@ -226,7 +234,7 @@ Must use style prop to override the css variables of the input segment, because 
 Button to open the time picker content.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerTriggerProps"
 />
 
@@ -256,7 +264,7 @@ Button to open the time picker content.
 Container for the time selection interface.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerContentProps"
 />
 
@@ -282,7 +290,7 @@ Container for the time selection interface.
 Component for selecting hours.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerHourProps"
 />
 
@@ -291,7 +299,7 @@ Component for selecting hours.
 Component for selecting minutes.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerMinuteProps"
 />
 
@@ -300,7 +308,7 @@ Component for selecting minutes.
 Component for selecting seconds.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerSecondProps"
 />
 
@@ -309,7 +317,7 @@ Component for selecting seconds.
 Component for selecting AM/PM in 12-hour format.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerPeriodProps"
 />
 
@@ -318,7 +326,7 @@ Component for selecting AM/PM in 12-hour format.
 Visual separator between time units.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerSeparatorProps"
 />
 
@@ -327,7 +335,7 @@ Visual separator between time units.
 Button to clear the selected time.
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerClearProps"
 />
 
@@ -336,7 +344,7 @@ Button to clear the selected time.
 Inline editable input field for time segments (hour, minute, second, period).
 
 <AutoTypeTable
-  path="./types/docs/time-picker.ts"
+  path="./types/radix/time-picker.ts"
   name="TimePickerInputProps"
 />
 

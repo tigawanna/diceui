@@ -11,43 +11,52 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/scroll-spy
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-     Install the following dependencies:
+<TabsContent value="manual">
 
-     ```package-install
-     @radix-ui/react-slot
-     ```
-  </Step>
-  <Step>
-    Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.
+<Steps className="pt-2">
 
-    <ComponentSource name="compose-refs" />
-  </Step>
-  <Step>
-    Copy and paste the following hooks into your `hooks` directory.
+<Step>Install the following dependencies:</Step>
 
-    <ComponentSource name="use-isomorphic-layout-effect" />
-    <ComponentSource name="use-lazy-ref" />
-    <ComponentSource name="use-as-ref" />
-  </Step>
-  <Step>
-    Copy and paste the following code into your project.
+```package-install
+@radix-ui/react-slot
+```
 
-    <ComponentSource name="scroll-spy" />
-  </Step>
-  <Step>
-    Update the import paths to match your project setup.
-  </Step>
+<Step>Copy and paste the refs composition utilities into your `lib/compose-refs.ts` file.</Step>
+
+<ComponentSource name="compose-refs" />
+
+<Step>Copy and paste the following hooks into your `hooks` directory.</Step>
+
+<ComponentSource name="use-isomorphic-layout-effect" />
+<ComponentSource name="use-lazy-ref" />
+<ComponentSource name="use-as-ref" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="scroll-spy" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -126,7 +135,7 @@ The key is to apply `sticky top-[offset]` to the `ScrollSpyNav` to keep the navi
 The root component that manages scroll tracking and contains all ScrollSpy parts.
 
 <AutoTypeTable
-  path="./types/docs/scroll-spy.ts"
+  path="./types/radix/scroll-spy.ts"
   name="ScrollSpyProps"
 />
 
@@ -144,7 +153,7 @@ The root component that manages scroll tracking and contains all ScrollSpy parts
 The navigation container component.
 
 <AutoTypeTable
-  path="./types/docs/scroll-spy.ts"
+  path="./types/radix/scroll-spy.ts"
   name="ScrollSpyNavProps"
 />
 
@@ -162,7 +171,7 @@ The navigation container component.
 Navigation link that scrolls to a section.
 
 <AutoTypeTable
-  path="./types/docs/scroll-spy.ts"
+  path="./types/radix/scroll-spy.ts"
   name="ScrollSpyLinkProps"
 />
 
@@ -184,7 +193,7 @@ Navigation link that scrolls to a section.
 The viewport container component for sections.
 
 <AutoTypeTable
-  path="./types/docs/scroll-spy.ts"
+  path="./types/radix/scroll-spy.ts"
   name="ScrollSpyViewportProps"
 />
 
@@ -202,7 +211,7 @@ The viewport container component for sections.
 Content section that gets tracked by the scroll spy.
 
 <AutoTypeTable
-  path="./types/docs/scroll-spy.ts"
+  path="./types/radix/scroll-spy.ts"
   name="ScrollSpySectionProps"
 />
 

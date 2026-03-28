@@ -11,21 +11,34 @@ links:
 
 ## Installation
 
-### CLI
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
 
 ```package-install
 npx shadcn@latest add @diceui/status
 ```
 
-### Manual
+</TabsContent>
 
-<Steps>
-  <Step>
-    Copy and paste the following code into your project.
+<TabsContent value="manual">
 
-    <ComponentSource name="status" />
-  </Step>
+<Steps className="pt-2">
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="status" />
+
 </Steps>
+
+</TabsContent>
+
+</CodeTabs>
 
 ## Layout
 
@@ -73,7 +86,7 @@ Display multiple status items in a list format, ideal for system health dashboar
 The main container component that provides the badge-style wrapper with color variants.
 
 <AutoTypeTable
-  path="./types/docs/status.ts"
+  path="./types/radix/status.ts"
   name="StatusProps"
 />
 
@@ -91,7 +104,7 @@ The main container component that provides the badge-style wrapper with color va
 An animated pulse indicator for the status.
 
 <AutoTypeTable
-  path="./types/docs/status.ts"
+  path="./types/radix/status.ts"
   name="StatusIndicatorProps"
 />
 
@@ -100,7 +113,7 @@ An animated pulse indicator for the status.
 The text label for the status.
 
 <AutoTypeTable
-  path="./types/docs/status.ts"
+  path="./types/radix/status.ts"
   name="StatusLabelProps"
 />
 
