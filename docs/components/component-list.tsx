@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { type RegistryBase, registries } from "@/registry";
+import { type RegistryBase, registries } from "@/registry/registry";
 
 function slugToTitle(slug: string): string {
   const special: Record<string, string> = {
@@ -22,11 +22,11 @@ function getComponents(base: RegistryBase) {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-interface ComponentsProps {
+interface ComponentListProps {
   base?: RegistryBase;
 }
 
-export function Components({ base = "radix" }: ComponentsProps) {
+export function ComponentList({ base = "radix" }: ComponentListProps) {
   const components = getComponents(base);
 
   return (

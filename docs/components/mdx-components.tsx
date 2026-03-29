@@ -77,9 +77,9 @@ const KeyboardShortcutsTable = dynamic(() =>
   })),
 );
 
-const Components = dynamic(() =>
-  import("@/components/components").then((mod) => ({
-    default: mod.Components,
+const ComponentList = dynamic(() =>
+  import("@/components/component-list").then((mod) => ({
+    default: mod.ComponentList,
   })),
 );
 
@@ -145,21 +145,53 @@ export function useMdxComponents(
     TabsList: MdxTabsList,
     TabsTrigger: MdxTabsTrigger,
     TabsContent: MdxTabsContent,
+    Steps,
+    Step,
+    Callout,
     Kbd: ({ className, ...props }: React.ComponentProps<typeof Kbd>) => (
       <Kbd className={cn("not-prose", className)} {...props} />
     ),
-    Callout,
-    ComponentTabs,
-    ComponentSource,
-    Steps,
-    Step,
-    AutoTypeTable,
-    CSSVariablesTable,
-    DataAttributesTable,
-    PropsTable,
-    KeyboardShortcutsTable,
-    Components,
-    Changelogs,
+    ComponentTabs: ({
+      ...props
+    }: React.ComponentProps<typeof ComponentTabs>) => (
+      <ComponentTabs {...props} />
+    ),
+    ComponentSource: ({
+      ...props
+    }: React.ComponentProps<typeof ComponentSource>) => (
+      <ComponentSource {...props} />
+    ),
+    AutoTypeTable: ({
+      ...props
+    }: React.ComponentProps<typeof AutoTypeTable>) => (
+      <AutoTypeTable {...props} />
+    ),
+    CSSVariablesTable: ({
+      ...props
+    }: React.ComponentProps<typeof CSSVariablesTable>) => (
+      <CSSVariablesTable {...props} />
+    ),
+    DataAttributesTable: ({
+      ...props
+    }: React.ComponentProps<typeof DataAttributesTable>) => (
+      <DataAttributesTable {...props} />
+    ),
+    PropsTable: ({ ...props }: React.ComponentProps<typeof PropsTable>) => (
+      <PropsTable {...props} />
+    ),
+    KeyboardShortcutsTable: ({
+      ...props
+    }: React.ComponentProps<typeof KeyboardShortcutsTable>) => (
+      <KeyboardShortcutsTable {...props} />
+    ),
+    ComponentList: ({
+      ...props
+    }: React.ComponentProps<typeof ComponentList>) => (
+      <ComponentList {...props} />
+    ),
+    Changelogs: ({ ...props }: React.ComponentProps<typeof Changelogs>) => (
+      <Changelogs {...props} />
+    ),
   };
 }
 

@@ -14,7 +14,8 @@ import {
 } from "shadcn/schema";
 import { Project, ScriptKind, SyntaxKind } from "ts-morph";
 import type { z } from "zod";
-import { type RegistryBase, registries } from "../registry";
+import { DEFAULT_BASE } from "../lib/constants";
+import { type RegistryBase, registries } from "../registry/registry";
 import { STYLES } from "../registry/styles";
 import { fixImport } from "./fix-imports.mts";
 
@@ -122,10 +123,17 @@ export const ExamplesIndex: Record<string, Record<string, unknown>> = {
         const type = item.type.split(":")[1];
         let sourceFilename = "";
 
-        // biome-ignore lint/suspicious/noExplicitAny: chunks can contain various types from AST parsing
-        let chunks: any = [];
+        let chunks: Array<{
+          name: string;
+          description: string;
+          file: string;
+          container: {
+            className: string | undefined;
+          };
+        }> = [];
         if (item.type === "registry:block") {
           const file = resolveFiles[0];
+          if (!file) continue;
           const filename = path.basename(file);
           let raw: string;
           try {
@@ -307,7 +315,7 @@ export const ExamplesIndex: Record<string, Record<string, unknown>> = {
                 : file,
             );
             if (files?.length) {
-              sourceFilename = `__registry__/${baseName}/${style.name}/${files[0].path}`;
+              sourceFilename = `__registry__/${baseName}/${style.name}/${files[0]?.path}`;
             }
           }
 
@@ -329,7 +337,7 @@ export const ExamplesIndex: Record<string, Record<string, unknown>> = {
               : file,
           );
           if (files?.length) {
-            componentPath = `@/registry/bases/${baseName}/${files[0].path}`;
+            componentPath = `@/registry/bases/${baseName}/${files[0]?.path}`;
           }
         }
 
@@ -505,8 +513,7 @@ async function buildStylesIndex() {
 // Uses the default base ("radix") as the primary registry index.
 // ----------------------------------------------------------------------------
 async function buildRootIndex() {
-  const defaultBase: RegistryBase = "radix";
-  const registry = registries[defaultBase];
+  const registry = registries[DEFAULT_BASE];
 
   const uiItems = registry.items
     .filter((item) => ["registry:ui"].includes(item.type))
