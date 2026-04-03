@@ -198,6 +198,32 @@ export const ExamplesIndex: Record<string, Record<string, unknown>> = {
         source: "",
         chunks: []
       },
+      "banner-demo": {
+        name: "banner-demo",
+        description: "",
+        type: "registry:example",
+        registryDependencies: ["banner","button"],
+        files: [{
+          path: "registry/bases/radix/examples/banner-demo.tsx",
+          type: "registry:example",
+          target: ""
+        }],
+        source: "",
+        chunks: []
+      },
+      "banner-stacked-demo": {
+        name: "banner-stacked-demo",
+        description: "",
+        type: "registry:example",
+        registryDependencies: ["banner","button"],
+        files: [{
+          path: "registry/bases/radix/examples/banner-stacked-demo.tsx",
+          type: "registry:example",
+          target: ""
+        }],
+        source: "",
+        chunks: []
+      },
       "checkbox-group-demo": {
         name: "checkbox-group-demo",
         description: "",
@@ -2780,6 +2806,32 @@ export const ExamplesIndex: Record<string, Record<string, unknown>> = {
         registryDependencies: ["badge","badge-overflow","button","input"],
         files: [{
           path: "registry/bases/base/examples/badge-overflow-interactive-demo.tsx",
+          type: "registry:example",
+          target: ""
+        }],
+        source: "",
+        chunks: []
+      },
+      "banner-demo": {
+        name: "banner-demo",
+        description: "",
+        type: "registry:example",
+        registryDependencies: ["banner","button"],
+        files: [{
+          path: "registry/bases/base/examples/banner-demo.tsx",
+          type: "registry:example",
+          target: ""
+        }],
+        source: "",
+        chunks: []
+      },
+      "banner-stacked-demo": {
+        name: "banner-stacked-demo",
+        description: "",
+        type: "registry:example",
+        registryDependencies: ["banner","button"],
+        files: [{
+          path: "registry/bases/base/examples/banner-stacked-demo.tsx",
           type: "registry:example",
           target: ""
         }],

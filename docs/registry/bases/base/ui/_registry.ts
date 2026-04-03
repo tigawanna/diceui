@@ -235,6 +235,22 @@ export const ui: Registry["items"] = [
     dependencies: ["@base-ui/react"],
   },
   {
+    name: "banner",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/banner.tsx",
+        type: "registry:ui",
+      },
+    ],
+    registryDependencies: [
+      "button",
+      "@diceui/use-as-ref",
+      "@diceui/use-lazy-ref",
+    ],
+    dependencies: ["@base-ui/react"],
+  },
+  {
     name: "segmented-input",
     type: "registry:ui",
     files: [

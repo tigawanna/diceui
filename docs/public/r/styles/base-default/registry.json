@@ -264,6 +264,24 @@
       ]
     },
     {
+      "name": "banner",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "ui/banner.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "registryDependencies": [
+        "button",
+        "@diceui/use-as-ref",
+        "@diceui/use-lazy-ref"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ]
+    },
+    {
       "name": "segmented-input",
       "type": "registry:ui",
       "files": [
@@ -1323,6 +1341,40 @@
       "files": [
         {
           "path": "examples/badge-overflow-interactive-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "banner-demo",
+      "type": "registry:example",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "banner",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "examples/banner-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "banner-stacked-demo",
+      "type": "registry:example",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "banner",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "examples/banner-stacked-demo.tsx",
           "type": "registry:example"
         }
       ]
